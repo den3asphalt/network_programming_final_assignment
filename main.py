@@ -157,6 +157,7 @@ async def bus(flag:bool,
             minute = i
             break
     
+    # この時間にもうバスがない場合
     if minute == 0:
         return await bus(flag, now_hour+1, 0)
 
